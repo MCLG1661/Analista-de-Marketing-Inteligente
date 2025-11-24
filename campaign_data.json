@@ -1,0 +1,41 @@
+[
+    {
+        "id_campanha": "CAMPANHA001",
+        "nome_campanha": "Lançamento Verão 2024",
+        "canal": "Facebook Ads",
+        "data_inicio": "2024-01-15",
+        "data_fim": "2024-02-15",
+        "investimento": 5000.00,
+        "impressoes": 250000,
+        "cliques": 7500,
+        "conversoes_lead": 500,
+        "conversoes_venda": 50,
+        "receita_gerada": 15000.00
+    },
+    {
+        "id_campanha": "CAMPANHA002",
+        "nome_campanha": "Promoção Dia das Mães",
+        "canal": "Google Ads",
+        "data_inicio": "2024-04-20",
+        "data_fim": "2024-05-12",
+        "investimento": 7500.00,
+        "impressoes": 300000,
+        "cliques": 6000,
+        "conversoes_lead": 400,
+        "conversoes_venda": 80,
+        "receita_gerada": 25000.00
+    },
+    {
+        "id_campanha": "CAMPANHA003",
+        "nome_campanha": "Newsletter Mensal - Junho",
+        "canal": "Email Marketing",
+        "data_inicio": "2024-06-01",
+        "data_fim": "2024-06-30",
+        "investimento": 500.00,
+        "impressoes": 10000,
+        "cliques": 1500,
+        "conversoes_lead": 0,
+        "conversoes_venda": 60,
+        "receita_gerada": 12000.00
+    }
+]
