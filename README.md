@@ -1,6 +1,6 @@
 # MIA - Marketing Intelligence Analyst
 
-![MIA Screenshot](https://via.placeholder.com/800x450.png/111827/818cf8?text=MIA%20-%20Interface)
+
 
 **MIA (Marketing Intelligence Analyst)** é uma aplicação web client-side projetada para auxiliar profissionais de marketing no planejamento, monitoramento e análise de campanhas digitais. Construída com HTML, CSS e JavaScript puros, ela oferece um fluxo de trabalho estruturado em três fases para transformar dados brutos de campanha em decisões inteligentes e acionáveis.
 
