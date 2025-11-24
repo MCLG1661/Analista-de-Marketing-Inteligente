@@ -38,6 +38,12 @@ Este projeto foi construído do zero, focando em tecnologias web fundamentais, s
 │   └── 📄 README.md         # Esta documentação
 ```
 
+👨‍💻 Autor :
+
+Marcus Guedes
+GitHub: https://github.com/MCLG1661
+LinkedIn: https://www.linkedin.com/in/marcusguedes
+
 ---
 
 *Este projeto foi desenvolvido como uma ferramenta prática para análise de marketing, demonstrando a capacidade de criar aplicações complexas e úteis apenas com tecnologias web essenciais.*# Analista-de-Marketing-Inteligente-
