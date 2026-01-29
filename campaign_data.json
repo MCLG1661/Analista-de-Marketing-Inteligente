@@ -1,41 +1,69 @@
 [
-    {
-        "id_campanha": "CAMPANHA001",
-        "nome_campanha": "Lançamento Verão 2024",
-        "canal": "Facebook Ads",
-        "data_inicio": "2024-01-15",
-        "data_fim": "2024-02-15",
-        "investimento": 5000.00,
-        "impressoes": 250000,
-        "cliques": 7500,
-        "conversoes_lead": 500,
-        "conversoes_venda": 50,
-        "receita_gerada": 15000.00
+  {
+    "campaign_name": "Lançamento Festival SynthWave Brasil 2024",
+    "objective": "Gerar awareness e vender o primeiro lote de ingressos para o festival.",
+    "start_date": "2024-08-01",
+    "end_date": "2024-09-15",
+    "budget": 500000,
+    "currency": "BRL",
+    "target_audience": {
+      "description": "Jovens e adultos (25-45 anos), entusiastas de música eletrônica, cultura pop dos anos 80/90, tecnologia e games. Frequentadores de festivais como Lollapalooza e Tomorrowland.",
+      "interests": ["Música Eletrônica", "Nu Disco", "House", "Daft Punk", "Vintage Culture", "Games Retrô", "Tecnologia"],
+      "location": ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Curitiba"]
     },
-    {
-        "id_campanha": "CAMPANHA002",
-        "nome_campanha": "Promoção Dia das Mães",
-        "canal": "Google Ads",
-        "data_inicio": "2024-04-20",
-        "data_fim": "2024-05-12",
-        "investimento": 7500.00,
-        "impressoes": 300000,
-        "cliques": 6000,
-        "conversoes_lead": 400,
-        "conversoes_venda": 80,
-        "receita_gerada": 25000.00
-    },
-    {
-        "id_campanha": "CAMPANHA003",
-        "nome_campanha": "Newsletter Mensal - Junho",
-        "canal": "Email Marketing",
-        "data_inicio": "2024-06-01",
-        "data_fim": "2024-06-30",
-        "investimento": 500.00,
-        "impressoes": 10000,
-        "cliques": 1500,
-        "conversoes_lead": 0,
-        "conversoes_venda": 60,
-        "receita_gerada": 12000.00
+    "channels": [
+      {
+        "name": "Instagram",
+        "budget_allocation": 250000,
+        "kpis": ["Impressions", "Reach", "Engagement Rate", "Ticket Clicks"]
+      },
+      {
+        "name": "TikTok",
+        "budget_allocation": 150000,
+        "kpis": ["Video Views", "Shares", "Conversion Rate"]
+      },
+      {
+        "name": "Email Marketing",
+        "budget_allocation": 50000,
+        "kpis": ["Open Rate", "Click-Through Rate", "Conversions"]
+      },
+      {
+        "name": "Influencers",
+        "budget_allocation": 50000,
+        "kpis": ["Mentions", "Audience Growth", "Promo Code Usage"]
+      }
+    ],
+    "creatives": [
+      {
+        "id": "CRTV001",
+        "channel": "Instagram",
+        "type": "Video Teaser",
+        "title": "A Onda Retrôfuturista Chegou",
+        "description": "Vídeo curto com batidas de Nu Disco e imagens de artistas como Daft Punk e Purple Disco Machine, anunciando a data do festival.",
+        "related_artists": ["Daft Punk", "Purple Disco Machine", "Nu Disco"]
+      },
+      {
+        "id": "CRTV002",
+        "channel": "TikTok",
+        "type": "Challenge",
+        "title": "#PassinhoSynthWave",
+        "description": "Desafio de dança usando um remix exclusivo de uma música do Vintage Culture.",
+        "related_artists": ["Vintage Culture"]
+      },
+      {
+        "id": "CRTV003",
+        "channel": "Email Marketing",
+        "type": "Newsletter",
+        "title": "Line-up Exclusivo e Pré-venda SynthWave Brasil!",
+        "description": "Email para a base de leads com o anúncio de parte do line-up (Alok, Mochakk) e link para pré-venda com desconto.",
+        "related_artists": ["Alok", "Mochakk"]
+      }
+    ],
+    "financial_metrics": {
+      "ebitda": 125000,
+      "margin": "25%",
+      "roi": "4.5",
+      "flow": 60000
     }
+  }
 ]
