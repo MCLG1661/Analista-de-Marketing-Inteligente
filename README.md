@@ -12,40 +12,86 @@ Contexto de Negócio
 Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados.
 Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento).
 
+##🎯 Objetivo do Projeto
+
+Desenvolver uma aplicação capaz de :
+
+- Estruturar o planejamento de campanhas com metas claras
+- Monitorar performance em tempo real
+- Analisar dados de marketing para gerar insights acionáveis
+- Apoiar a tomada de decisão orientada a dados
+
 ## ✨ Funcionalidades Principais
 
-*   **Fluxo de Trabalho em Três Fases:**
-    *   **Fase 1: Planejamento e Estratégia:** Defina metas SMART, público-alvo, orçamento e CPL (Custo por Lead) esperado para sua campanha.
-    *   **Fase 2: Monitoramento e Otimização em Tempo Real:** Insira os dados de performance (impressões, cliques, custo, conversões) para diferentes criativos. A MIA fornece análises em tempo real, identificando os anúncios de melhor desempenho e oferecendo recomendações de otimização.
-    *   **Fase 3: Análise Pós-Campanha:** Gera automaticamente um relatório final com KPIs consolidados, ROI (Retorno sobre o Investimento), CPL real vs. meta, e insights acionáveis para campanhas futuras (o que repetir, evitar e testar).
+A aplicação segue um fluxo completo de análise de campanhas em três etapas:
 
-*   **Motor de Análise Inteligente:** Uma função central em JavaScript analisa os dados de performance para calcular CTR, CPL e identificar anúncios vencedores e de baixo desempenho com base em critérios pré-definidos.
-*   **Recomendações Acionáveis:** A MIA não apenas exibe dados; ela fornece sugestões claras e baseadas em dados para realocação de orçamento, pausa de anúncios e refinamento de público.
-*   **Persistência de Dados Local:** Todos os dados da sua campanha são salvos diretamente no `localStorage` do seu navegador. Isso significa que você pode fechar a aba e continuar de onde parou, sem a necessidade de um banco de dados ou backend.
-*   **Interface Moderna e Responsiva:** Um design limpo, com tema escuro, construído para ser agradável e funcional em diferentes tamanhos de tela.
+1. Planejamento
 
-## 📊 Principais Insights
+- Definição de metas SMART
+- Segmentação de público-alvo
+- Definição de orçamento e CPL esperado
 
-- Identificação de anúncios com baixo desempenho com base em CTR e CPL
-- Detecção de oportunidades de realocação de orçamento
-- Comparação entre CPL planejado vs. real
-- Identificação de criativos com maior taxa de conversão
+2. Monitoramento
+
+- Inserção de dados de campanha (impressões, cliques, custo, conversões)
+- Cálculo automático de métricas como:
+- CTR (Click Through Rate)
+- CPL (Custo por Lead)
+
+Identificação de criativos com melhor e pior desempenho
+
+3. Análise
+
+- Consolidação dos KPIs da campanha
+- Comparação entre resultados planejados vs. realizados
+- Geração de recomendações para otimização
+
+## 📊 Principais Análises Realizadas
+
+- Comparação de performance entre diferentes criativos
+- Identificação de anúncios com baixo desempenho
+- Análise de eficiência de investimento (CPL real vs. esperado)
+- Avaliação de taxa de conversão ao longo da campanha
+
+## 💡 Insights Gerados
+
+A aplicação permite identificar, por exemplo :
+
+- Quais campanhas apresentam melhor custo-benefício
+- Onde há desperdício de investimento
+- Quais criativos devem ser pausados ou escalados
+- Diferenças entre planejamento e execução
 
 ## 💼 Impacto de Negócio
 
 A aplicação permite :
 
-- Redução de desperdício de mídia ao identificar campanhas ineficientes
-- Otimização de investimento com base em dados
-- Tomada de decisão mais rápida para ajustes em campanhas    
+- Reduzir desperdício de mídia
+- Melhorar a alocação de orçamento
+- Aumentar a eficiência de campanhas
+- Apoiar decisões rápidas e baseadas em dados
 
-## 🚀 Tecnologias Utilizadas
+## 🧪 Diferencial do Projeto
 
-Este projeto foi construído do zero, focando em tecnologias web fundamentais, sem o uso de frameworks ou bibliotecas externas.
+- Simulação de um fluxo real de marketing e vendas
+- Integração entre planejamento, execução e análise
+- Geração de recomendações acionáveis (não apenas visualização de dados)
+- Aplicação prática de métricas de marketing digital 
 
-*   **HTML5:** Para a estrutura semântica do conteúdo.
-*   **CSS3:** Para a estilização completa, utilizando Variáveis CSS para um tema coeso e de fácil manutenção.
-*   **JavaScript (ES6+):** Para toda a lógica da aplicação, incluindo manipulação do DOM, gerenciamento de estado, cálculos e renderização dinâmica da interface.
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Manipulação de DOM
+- Armazenamento local com localStorage
+
+## 🚀 Possíveis Evoluções
+
+- Integração com banco de dados (SQL ou Cloud)
+- Criação de dashboards com Power BI ou ferramentas de BI
+- Aplicação de Machine Learning para previsão de conversão
+- Integração com APIs de plataformas de anúncios 
 
 ## 📂 Estrutura do Projeto
 
