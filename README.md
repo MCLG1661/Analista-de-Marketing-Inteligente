@@ -7,7 +7,7 @@ Otimização de Campanhas Digitais com Dados e Insights Acionáveis
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Google Code Assist](https://img.shields.io/badge/Google%20Code%20Assist-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-**Contexto de Negócio
+Contexto de Negócio
 
 Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados.
 Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento).
