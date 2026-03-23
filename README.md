@@ -84,6 +84,29 @@ Abaixo está um cenário simulado de performance de campanha com três criativos
 
 ---
 
+## Insights Identificados
+
+- O Criativo C, apesar de ter alto volume de cliques, apresenta baixa conversão e maior CPL, indicando ineficiência
+- O Criativo B possui a melhor taxa de conversão, sendo um forte candidato para aumento de investimento
+- O Criativo A apresenta equilíbrio entre volume e eficiência, podendo ser mantido como base da campanha
+
+## Recomendações Estratégicas
+
+- Reduzir ou pausar investimento no Criativo C
+- Realocar orçamento para o Criativo B
+- Testar variações do Criativo A para ganho incremental
+- Revisar segmentação ou mensagem do Criativo C
+
+## Impacto Esperado
+
+- Com base nas otimizações propostas:
+- Redução do custo médio por lead
+- Melhor aproveitamento do orçamento de mídia
+- Aumento da taxa de conversão geral da campanha
+- Maior previsibilidade de resultados
+
+---
+
 ## 📊 Principais Análises Realizadas
 
 - Comparação de performance entre diferentes criativos
