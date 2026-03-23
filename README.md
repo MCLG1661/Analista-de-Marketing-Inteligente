@@ -12,6 +12,8 @@ Contexto de Negócio
 Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados.
 Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento).
 
+---
+
 ## 🎯 Objetivo do Projeto
 
 Desenvolver uma aplicação capaz de :
@@ -20,6 +22,8 @@ Desenvolver uma aplicação capaz de :
 - Monitorar performance em tempo real
 - Analisar dados de marketing para gerar insights acionáveis
 - Apoiar a tomada de decisão orientada a dados
+
+---
 
 ## ✨ Funcionalidades Principais
 
@@ -46,39 +50,9 @@ Identificação de criativos com melhor e pior desempenho
 - Comparação entre resultados planejados vs. realizados
 - Geração de recomendações para otimização
 
-## 📊 Principais Análises Realizadas
+---
 
-- Comparação de performance entre diferentes criativos
-- Identificação de anúncios com baixo desempenho
-- Análise de eficiência de investimento (CPL real vs. esperado)
-- Avaliação de taxa de conversão ao longo da campanha
-
-## 💡 Insights Gerados
-
-A aplicação permite identificar, por exemplo :
-
-- Quais campanhas apresentam melhor custo-benefício
-- Onde há desperdício de investimento
-- Quais criativos devem ser pausados ou escalados
-- Diferenças entre planejamento e execução
-
-## 💼 Impacto de Negócio
-
-A aplicação permite :
-
-- Reduzir desperdício de mídia
-- Melhorar a alocação de orçamento
-- Aumentar a eficiência de campanhas
-- Apoiar decisões rápidas e baseadas em dados
-
-## 🧪 Diferencial do Projeto
-
-- Simulação de um fluxo real de marketing e vendas
-- Integração entre planejamento, execução e análise
-- Geração de recomendações acionáveis (não apenas visualização de dados)
-- Aplicação prática de métricas de marketing digital
-
-#### 📈 Exemplo de Análise de Campanha
+## 📈 Exemplo de Análise de Campanha
 
 Abaixo está um cenário simulado de performance de campanha com três criativos:
 
@@ -88,7 +62,7 @@ Abaixo está um cenário simulado de performance de campanha com três criativos
 | B        | 8.000      | 320     | 20         | 200        |
 | C        | 12.000     | 600     | 18         | 300        |
 
-### 📊 Métricas Calculadas
+## 📊 Métricas Calculadas
 
 * **CTR (Click Through Rate)**
 
@@ -107,6 +81,46 @@ Abaixo está um cenário simulado de performance de campanha com três criativos
   * A: R$ 10,00
   * B: R$ 10,00
   * C: R$ 16,67
+
+---
+
+## 📊 Principais Análises Realizadas
+
+- Comparação de performance entre diferentes criativos
+- Identificação de anúncios com baixo desempenho
+- Análise de eficiência de investimento (CPL real vs. esperado)
+- Avaliação de taxa de conversão ao longo da campanha
+
+---
+
+## 💡 Insights Gerados
+
+A aplicação permite identificar, por exemplo :
+
+- Quais campanhas apresentam melhor custo-benefício
+- Onde há desperdício de investimento
+- Quais criativos devem ser pausados ou escalados
+- Diferenças entre planejamento e execução
+
+---
+
+## 💼 Impacto de Negócio
+
+A aplicação permite :
+
+- Reduzir desperdício de mídia
+- Melhorar a alocação de orçamento
+- Aumentar a eficiência de campanhas
+- Apoiar decisões rápidas e baseadas em dados
+
+--- 
+
+## 🧪 Diferencial do Projeto
+
+- Simulação de um fluxo real de marketing e vendas
+- Integração entre planejamento, execução e análise
+- Geração de recomendações acionáveis (não apenas visualização de dados)
+- Aplicação prática de métricas de marketing digital
 
 ---
 
