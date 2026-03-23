@@ -103,7 +103,7 @@ A aplicação permite :
 │   └── 📄 README.md         # Esta documentação
 ```
 
-👨‍💻 Autor :
+## 👨‍💻 Autor :
 
 Marcus Guedes
 GitHub: https://github.com/MCLG1661
