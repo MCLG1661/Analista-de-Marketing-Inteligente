@@ -76,7 +76,68 @@ A aplicação permite :
 - Simulação de um fluxo real de marketing e vendas
 - Integração entre planejamento, execução e análise
 - Geração de recomendações acionáveis (não apenas visualização de dados)
-- Aplicação prática de métricas de marketing digital 
+- Aplicação prática de métricas de marketing digital
+
+## ## 📈 Exemplo de Análise de Campanha
+
+Abaixo está um cenário simulado de performance de campanha com três criativos:
+
+| Criativo | Impressões | Cliques | Conversões | Custo (R$) |
+| -------- | ---------- | ------- | ---------- | ---------- |
+| A        | 10.000     | 500     | 25         | 250        |
+| B        | 8.000      | 320     | 20         | 200        |
+| C        | 12.000     | 600     | 18         | 300        |
+
+### 📊 Métricas Calculadas
+
+* **CTR (Click Through Rate)**
+
+  * A: 5,0%
+  * B: 4,0%
+  * C: 5,0%
+
+* **Taxa de Conversão**
+
+  * A: 5,0%
+  * B: 6,25%
+  * C: 3,0%
+
+* **CPL (Custo por Lead)**
+
+  * A: R$ 10,00
+  * B: R$ 10,00
+  * C: R$ 16,67
+
+---
+
+## 🔍 Insights Identificados
+
+* O **Criativo C**, apesar de ter alto volume de cliques, apresenta baixa conversão e maior CPL, indicando ineficiência
+* O **Criativo B** possui a melhor taxa de conversão, sendo um forte candidato para aumento de investimento
+* O **Criativo A** apresenta equilíbrio entre volume e eficiência, podendo ser mantido como base da campanha
+
+---
+
+## 🎯 Recomendações Estratégicas
+
+* Reduzir ou pausar investimento no Criativo C
+* Realocar orçamento para o Criativo B
+* Testar variações do Criativo A para ganho incremental
+* Revisar segmentação ou mensagem do Criativo C
+
+---
+
+## 💼 Impacto Esperado
+
+Com base nas otimizações propostas:
+
+* Redução do custo médio por lead
+* Melhor aproveitamento do orçamento de mídia
+* Aumento da taxa de conversão geral da campanha
+* Maior previsibilidade de resultados
+
+---
+  
 
 ## 🛠️ Tecnologias Utilizadas
 
