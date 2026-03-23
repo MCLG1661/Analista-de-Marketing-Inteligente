@@ -1,4 +1,5 @@
-# MIA - Marketing Intelligence Analyst
+# MIA (Marketing Intelligence Analyst)
+Otimização de Campanhas Digitais com Dados e Insights Acionáveis
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -6,7 +7,10 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Google Code Assist](https://img.shields.io/badge/Google%20Code%20Assist-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-**MIA (Marketing Intelligence Analyst)** é uma aplicação web client-side projetada para auxiliar profissionais de marketing no planejamento, monitoramento e análise de campanhas digitais. Construída com HTML, CSS e JavaScript puros, ela oferece um fluxo de trabalho estruturado em três fases para transformar dados brutos de campanha em decisões inteligentes e acionáveis.
+**Contexto de Negócio
+
+Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados.
+Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento).
 
 ## ✨ Funcionalidades Principais
 
@@ -19,6 +23,21 @@
 *   **Recomendações Acionáveis:** A MIA não apenas exibe dados; ela fornece sugestões claras e baseadas em dados para realocação de orçamento, pausa de anúncios e refinamento de público.
 *   **Persistência de Dados Local:** Todos os dados da sua campanha são salvos diretamente no `localStorage` do seu navegador. Isso significa que você pode fechar a aba e continuar de onde parou, sem a necessidade de um banco de dados ou backend.
 *   **Interface Moderna e Responsiva:** Um design limpo, com tema escuro, construído para ser agradável e funcional em diferentes tamanhos de tela.
+
+## 📊 Principais Insights
+
+- Identificação de anúncios com baixo desempenho com base em CTR e CPL
+- Detecção de oportunidades de realocação de orçamento
+- Comparação entre CPL planejado vs. real
+- Identificação de criativos com maior taxa de conversão
+
+## 💼 Impacto de Negócio
+
+A aplicação permite :
+
+- Redução de desperdício de mídia ao identificar campanhas ineficientes
+- Otimização de investimento com base em dados
+- Tomada de decisão mais rápida para ajustes em campanhas    
 
 ## 🚀 Tecnologias Utilizadas
 
