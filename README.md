@@ -78,7 +78,7 @@ A aplicação permite :
 - Geração de recomendações acionáveis (não apenas visualização de dados)
 - Aplicação prática de métricas de marketing digital
 
-## ## 📈 Exemplo de Análise de Campanha
+#### 📈 Exemplo de Análise de Campanha
 
 Abaixo está um cenário simulado de performance de campanha com três criativos:
 
