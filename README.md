@@ -69,27 +69,28 @@ Tomada de Decisão
 
 ## ✨ Funcionalidades Principais
 
-A aplicação segue um fluxo completo de análise de campanhas em três etapas:
-
-1. Planejamento
+1. 🎯 Planejamento
 
 - Definição de metas SMART
 - Segmentação de público-alvo
-- Definição de orçamento e CPL esperado
+- Definição de orçamento
+- DefiniçãO do CPL esperado
 
-2. Monitoramento
+2. 📊 Monitoramento
 
 - Inserção de dados de campanha (impressões, cliques, custo, conversões)
 - Cálculo automático de métricas como:
 - CTR (Click Through Rate)
 - CPL (Custo por Lead)
 
-Identificação de criativos com melhor e pior desempenho
+A aplicação utiliza essas informações para calcular automaticamente os indicadores de performance. 
 
-3. Análise
+3. 📈 Análise
 
 - Consolidação dos KPIs da campanha
 - Comparação entre resultados planejados vs. realizados
+- Identificação dos criativos mais eficientes
+- Identificação de oportunidades de otimização
 - Geração de recomendações para otimização
 
 ---
@@ -126,38 +127,6 @@ Abaixo está um cenário simulado de performance de campanha com três criativos
 
 ---
 
-## Insights Identificados
-
-- O Criativo C, apesar de ter alto volume de cliques, apresenta baixa conversão e maior CPL, indicando ineficiência
-- O Criativo B possui a melhor taxa de conversão, sendo um forte candidato para aumento de investimento
-- O Criativo A apresenta equilíbrio entre volume e eficiência, podendo ser mantido como base da campanha
-
-## Recomendações Estratégicas
-
-- Reduzir ou pausar investimento no Criativo C
-- Realocar orçamento para o Criativo B
-- Testar variações do Criativo A para ganho incremental
-- Revisar segmentação ou mensagem do Criativo C
-
-## Impacto Esperado
-
-- Com base nas otimizações propostas:
-- Redução do custo médio por lead
-- Melhor aproveitamento do orçamento de mídia
-- Aumento da taxa de conversão geral da campanha
-- Maior previsibilidade de resultados
-
----
-
-## 📊 Principais Análises Realizadas
-
-- Comparação de performance entre diferentes criativos
-- Identificação de anúncios com baixo desempenho
-- Análise de eficiência de investimento (CPL real vs. esperado)
-- Avaliação de taxa de conversão ao longo da campanha
-
----
-
 ## 💡 Insights Gerados
 
 A aplicação permite identificar, por exemplo :
@@ -169,14 +138,26 @@ A aplicação permite identificar, por exemplo :
 
 ---
 
-## 💼 Impacto de Negócio
+## 🔍 Recomendações
 
-A aplicação permite :
+Com base no cenário analisado, algumas ações possíveis seriam :
 
-- Reduzir desperdício de mídia
-- Melhorar a alocação de orçamento
-- Aumentar a eficiência de campanhas
-- Apoiar decisões rápidas e baseadas em dados
+- Avaliar aumento de investimento no Criativo B
+- Manter o Criativo A como referência de performance
+- Revisar investimento no Criativo C
+- Testar novas mensagens ou segmentações
+- Monitorar continuamente CPL e taxa de conversão
+
+## 💼 Aplicação ao Negócio
+
+A utilização estruturada dos indicadores pode apoiar decisões relacionadas a :
+
+- Eficiência do investimento em mídia
+- Alocação de orçamento
+- Otimização de campanhas
+- Avaliação de criativos
+- Acompanhamento de metas
+- Tomada de decisão baseada em dados
 
 --- 
 
@@ -189,63 +170,65 @@ A aplicação permite :
 
 ---
 
-## 🔍 Insights Identificados
-
-* O **Criativo C**, apesar de ter alto volume de cliques, apresenta baixa conversão e maior CPL, indicando ineficiência
-* O **Criativo B** possui a melhor taxa de conversão, sendo um forte candidato para aumento de investimento
-* O **Criativo A** apresenta equilíbrio entre volume e eficiência, podendo ser mantido como base da campanha
-
----
-
-## 🎯 Recomendações Estratégicas
-
-* Reduzir ou pausar investimento no Criativo C
-* Realocar orçamento para o Criativo B
-* Testar variações do Criativo A para ganho incremental
-* Revisar segmentação ou mensagem do Criativo C
-
----
-
-## 💼 Impacto Esperado
-
-Com base nas otimizações propostas:
-
-* Redução do custo médio por lead
-* Melhor aproveitamento do orçamento de mídia
-* Aumento da taxa de conversão geral da campanha
-* Maior previsibilidade de resultados
-
----
-  
-
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Manipulação de DOM
-- Armazenamento local com localStorage
+- **HTML5** Estrutura de Aplicação
+- **CSS3** Interface e Experi~encia Visual
+- **JavaScript (ES6+)** Lógica de Aplicação e Cáculos
+- **DOM** Manipulação Dinâmica da Interface
+- **LocalStorage** Persistência local das Informações
 
-## 🚀 Possíveis Evoluções
-
-- Integração com banco de dados (SQL ou Cloud)
-- Criação de dashboards com Power BI ou ferramentas de BI
-- Aplicação de Machine Learning para previsão de conversão
-- Integração com APIs de plataformas de anúncios 
+--- 
 
 ## 📂 Estrutura do Projeto
 
 ```
 ├── 📁 Analista de Marketing Inteligente/
-│   ├── 📄 index.html       # Arquivo principal da estrutura HTML
+│   ├── 📄 index.html        # Arquivo principal da estrutura HTML
 │   ├── 📄 style.css         # Folha de estilos para toda a aplicação
 │   ├── 📄 script.js         # Lógica principal da aplicação em JavaScript
 │   └── 📄 README.md         # Esta documentação
 ```
 
+---
+
+## 💡 Competências Demonstradas
+
+O projeto explora conhecimentos relacionados a :
+ 
+- Marketing Analytics
+- Marketing Intelligence
+- Análise de campanhas digitais
+- KPIs de Marketing
+- Data-Driven Decision Making
+- Planejamento de campanhas
+- Análise de performance
+- HTML
+- CSS
+- JavaScript
+- Desenvolvimento de aplicações web
+
+## 🚀 Possíveis Evoluções
+
+A arquitetura atual permite evoluir o projeto para incorporar novas funcionalidades, como :
+
+- Integração com banco de dados
+- Dashboards interativos
+- Integração com APIs de plataformas de mídia
+- Machine Learning para previsão de performance
+- Segmentação baseada em dados
+- Detecção de anomalias em campanhas
+- Inteligência Artificial Generativa para interpretação dos resultados
+- Agente de IA para recomendações de Marketing
+
+--- 
+
 ## 👨‍💻 Autor :
 
 Marcus Guedes
+
+Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
+
 GitHub: https://github.com/MCLG1661
 LinkedIn: https://www.linkedin.com/in/marcusguedes
 
