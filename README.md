@@ -31,14 +31,41 @@ O MIA foi desenvolvido para organizar essas informações e transformá-las em u
 
 ## 🎯 Objetivo do Projeto
 
-Transformar dados de campanhas em análises e insights que apoiem decisões de Marketing orientadas por dados, reduzindo o esforço necessário para interpretar grandes volumes de indicadores e ser capaz de :
+Desenvolver uma ferramenta capaz de apoiar o ciclo de gestão de campanhas digitais, permitindo :
 
-- Estruturar o planejamento de campanhas com metas claras
-- Monitorar performance em tempo real
-- Analisar dados de marketing para gerar insights acionáveis
-- Apoiar a tomada de decisão orientada a dados
+- Estruturar campanhas com objetivos e metas definidas
+- Registrar dados de performance
+- Calcular automaticamente os principais KPIs
+- Comparar planejamento e execução
+- Identificar campanhas e criativos com melhor ou pior desempenho
+- Gerar recomendações para otimização do investimento
 
 ---
+
+## 🔄 Fluxo da Aplicação
+
+```text
+Planejamento
+     ↓
+Definição de Metas
+     ↓
+Segmentação e Orçamento
+     ↓
+Execução da Campanha
+     ↓
+Entrada dos Dados
+     ↓
+Cálculo dos KPIs
+     ↓
+Análise de Performance
+     ↓
+Identificação de Oportunidades
+     ↓
+Recomendações
+     ↓
+Tomada de Decisão
+
+```
 
 ## ✨ Funcionalidades Principais
 
