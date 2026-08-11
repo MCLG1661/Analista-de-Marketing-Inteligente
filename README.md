@@ -16,7 +16,7 @@ Este projeto simula um cenário real de marketing digital, onde dados de campanh
 
 ## 🎯 Objetivo do Projeto
 
-Desenvolver uma aplicação capaz de :
+Transformar dados de campanhas em análises e insights que apoiem decisões de Marketing orientadas por dados, reduzindo o esforço necessário para interpretar grandes volumes de indicadores e ser capaz de :
 
 - Estruturar o planejamento de campanhas com metas claras
 - Monitorar performance em tempo real
