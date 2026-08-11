@@ -9,8 +9,8 @@ Otimização de Campanhas Digitais com Dados e Insights Acionáveis
 
 Contexto de Negócio
 
-Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados.
-Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento).
+Empresas frequentemente investem em campanhas digitais sem clareza sobre quais canais, criativos ou estratégias realmente geram retorno. Isso resulta em desperdício de orçamento, baixa conversão e decisões baseadas mais em intuição do que em dados. Este projeto simula um cenário real de marketing digital, onde dados de campanhas são analisados para identificar gargalos, otimizar investimentos e maximizar o ROI (Retorno sobre Investimento). A solução explora a integração entre Marketing, Data Analytics e Inteligência Artificial, permitindo interpretar indicadores, identificar padrões de desempenho e gerar insights que auxiliem profissionais de Marketing na avaliação de campanhas e definição de ações.
+O projeto parte de uma premissa central: dados de Marketing geram maior valor quando são transformados em informações compreensíveis, contextualizadas e acionáveis.
 
 ---
 
