@@ -8,6 +8,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Google Code Assist](https://img.shields.io/badge/Google%20Code%20Assist-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
+É uma aplicação web desenvolvida para transformar dados de campanhas digitais em indicadores, análises e recomendações acionáveis, apoiando profissionais de Marketing na tomada de decisões orientadas por dados.
+A solução integra planejamento, monitoramento e análise de performance em um único fluxo, permitindo acompanhar métricas de campanha, comparar resultados planejados e realizados e identificar oportunidades de otimização do investimento em mídia.
+
 ---
 
 Contexto de Negócio
