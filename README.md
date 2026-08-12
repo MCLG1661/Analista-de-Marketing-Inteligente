@@ -221,7 +221,75 @@ A arquitetura atual permite evoluir o projeto para incorporar novas funcionalida
 - Inteligência Artificial Generativa para interpretação dos resultados
 - Agente de IA para recomendações de Marketing
 
---- 
+---
+
+## ## 🤝 Como Contribuir
+
+Contribuições são bem-vindas para ampliar as capacidades do **MIA — Marketing Intelligence Analyst** e explorar novas formas de transformar dados de campanhas em informações úteis para tomada de decisão.
+
+Algumas possibilidades de evolução incluem:
+
+- Novos KPIs de Marketing
+- Dashboards e visualizações interativas
+- Comparações entre campanhas e períodos
+- Integração com APIs de plataformas de mídia
+- Persistência em banco de dados
+- Análise de ROI e ROAS
+- Segmentação de campanhas
+- Modelos preditivos de performance
+- Detecção de anomalias
+- Inteligência Artificial Generativa para interpretação dos resultados
+- Recomendações automatizadas de otimização
+
+---
+
+## 🤝 Como Contribuir
+
+Contribuições são bem-vindas para ampliar as capacidades do **MIA — Marketing Intelligence Analyst** e explorar novas formas de transformar dados de campanhas em informações úteis para tomada de decisão.
+
+Algumas possibilidades de evolução incluem:
+
+- Novos KPIs de Marketing
+- Dashboards e visualizações interativas
+- Comparações entre campanhas e períodos
+- Integração com APIs de plataformas de mídia
+- Persistência em banco de dados
+- Análise de ROI e ROAS
+- Segmentação de campanhas
+- Modelos preditivos de performance
+- Detecção de anomalias
+- Inteligência Artificial Generativa para interpretação dos resultados
+- Recomendações automatizadas de otimização
+
+Para contribuir
+
+1. Faça um **Fork** do repositório
+2. Crie uma branch:
+
+```bash
+git checkout -b feature/nova-funcionalidade
+
+```
+
+Faça suas alterações e registre o commit:
+
+```bash
+git commit -m "Adiciona nova funcionalidade"
+
+```
+
+Envie sua branch:
+
+```bash
+git push origin feature/nova-funcionalidade
+
+```
+
+Abra um **Pull Request** explicando a melhoria implementada e seu impacto esperado.
+
+Contribuições relacionadas a Marketing Analytics, Data Visualization, Marketing Intelligence, Machine Learning e Inteligência Artificial aplicada ao Marketing são especialmente bem-vindas.
+
+---
 
 ## 👨‍💻 Autor :
 
