@@ -223,7 +223,7 @@ A arquitetura atual permite evoluir o projeto para incorporar novas funcionalida
 
 ---
 
-## ## 🤝 Como Contribuir
+## 🤝 Como Contribuir
 
 Contribuições são bem-vindas para ampliar as capacidades do **MIA — Marketing Intelligence Analyst** e explorar novas formas de transformar dados de campanhas em informações úteis para tomada de decisão.
 
