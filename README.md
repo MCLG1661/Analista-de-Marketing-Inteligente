@@ -172,11 +172,11 @@ A utilização estruturada dos indicadores pode apoiar decisões relacionadas a 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** Estrutura de Aplicação
-- **CSS3** Interface e Experi~encia Visual
-- **JavaScript (ES6+)** Lógica de Aplicação e Cáculos
-- **DOM** Manipulação Dinâmica da Interface
-- **LocalStorage** Persistência local das Informações
+- **HTML5** - Estrutura de Aplicação
+- **CSS3** - Interface e Experi~encia Visual
+- **JavaScript (ES6+)** - Lógica de Aplicação e Cáculos
+- **DOM** - Manipulação Dinâmica da Interface
+- **LocalStorage** - Persistência local das Informações
 
 --- 
 
