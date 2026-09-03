@@ -1,253 +1,1095 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMIGO - Assistente de Marketing Inteligente para Gestão de Oportunidades
-</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="MIA — Marketing Intelligence Analyst. Aplicação web para transformar dados de campanhas digitais em KPIs, diagnósticos e recomendações acionáveis."
+    >
+
+    <title>
+        MIA — Marketing Intelligence Analyst
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
+
+
 <body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- ======================================================
+         SIDEBAR
+    ======================================================= -->
 
     <aside class="sidebar">
-        <div class="logo">MIA</div>
-        <nav>
-            <ul>
-                <li id="nav-dashboard">Dashboard</li>
-                <li id="nav-reports">Relatórios</li>
-                <li id="nav-campaign">Análise de Campanha</li>
-                <li id="nav-calc">Calculadora de Métricas</li>
-                <li id="nav-sources">Fontes de Dados</li>
-            </ul>
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+
+            <div>
+                <strong>
+                    MIA
+                </strong>
+
+                <span>
+                    Marketing Intelligence Analyst
+                </span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a
+                href="#dashboard"
+                class="nav-item active"
+            >
+                <i class="fas fa-gauge-high"></i>
+                Dashboard
+            </a>
+
+
+            <a
+                href="#performance"
+                class="nav-item"
+            >
+                <i class="fas fa-chart-column"></i>
+                Performance
+            </a>
+
+
+            <a
+                href="#goals"
+                class="nav-item"
+            >
+                <i class="fas fa-bullseye"></i>
+                Metas
+            </a>
+
+
+            <a
+                href="#recommendations"
+                class="nav-item"
+            >
+                <i class="fas fa-lightbulb"></i>
+                Recomendações
+            </a>
+
+
+            <a
+                href="#methodology"
+                class="nav-item"
+            >
+                <i class="fas fa-diagram-project"></i>
+                Metodologia
+            </a>
+
         </nav>
+
+
+        <div class="sidebar-footer">
+
+            <span class="status-dot"></span>
+
+            <div>
+                <strong>
+                    Motor Analítico
+                </strong>
+
+                <small>
+                    Rule-based Analytics
+                </small>
+            </div>
+
+        </div>
+
     </aside>
 
+
+    <!-- ======================================================
+         CONTEÚDO PRINCIPAL
+    ======================================================= -->
+
     <div class="main-content">
-        <header>
-            <h1>Assistente de Marketing Inteligente para Gestão de Oportunidades
-</h1>
-            <input type="search" class="search-bar" placeholder="Pesquisar insights, relatórios...">
+
+        <!-- ==================================================
+             HEADER
+        =================================================== -->
+
+        <header class="top-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    Marketing Intelligence
+                </span>
+
+                <h1>
+                    Dashboard de Performance
+                </h1>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <div class="search-bar">
+
+                    <i class="fas fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        placeholder="Buscar recomendações..."
+                        aria-label="Buscar recomendações"
+                    >
+
+                </div>
+
+
+                <div class="prototype-badge">
+
+                    <span></span>
+
+                    MVP Analytics
+
+                </div>
+
+            </div>
+
         </header>
-        <main class="dashboard">
-            <div id="dashboard-welcome" class="welcome-message">
-                <h2>Bem-vindo !</h2>
-                <p>Sou seu Assistente de Marketing Inteligente para Gestão de Oportunidades
- e estou pronto para transformar dados em informaçãos.</p>
-                <p>Comece conectando uma fonte de dados ou explorando os painéis.</p>
-            </div>
 
-            <!-- Seção de Métricas Financeiras -->
-            <div id="dashboard-metrics" class="financial-metrics metrics-grid">
-                <div class="card">
-                    <h3>EBITDA</h3>
-                    <p id="metric-ebitda">-</p>
-                </div>
-                <div class="card">
-                    <h3>Margem</h3>
-                    <p id="metric-margin">-</p>
-                </div>
-                <div class="card">
-                    <h3>ROI</h3>
-                    <p id="metric-roi">-</p>
-                </div>
-                <div class="card">
-                    <h3>Fluxo</h3>
-                    <p id="metric-flow">-</p>
-                </div>
-                <div class="card">
-                    <h3>Receita Estimada</h3>
-                    <p id="metric-revenue">-</p>
-                </div>
-                <div class="card">
-                    <h3>Orçamento Total</h3>
-                    <p id="metric-budget">-</p>
-                </div>
-            </div>
 
-            <!-- Seções Placeholder para Navegação -->
-            <div id="view-reports" class="hidden" style="padding: 2rem;">
-                <h2>Relatórios</h2>
-                <div class="card" style="max-width: 900px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                        <h3>Relatório de Performance Inteligente</h3>
-                        <button id="btn-download-pdf" class="action-btn" style="background: var(--error-color); color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Download PDF</button>
-                    </div>
-                    
-                    <!-- Seção de Gráficos -->
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--text-primary); border-bottom: 2px solid var(--accent-color); padding-bottom: 0.5rem; display: inline-block;">1. Resultados Visuais</h4>
-                        <div style="height: 300px; margin-top: 1rem;">
-                            <canvas id="reportChart"></canvas>
-                        </div>
+        <main class="dashboard-content">
+
+
+            <!-- ==================================================
+                 DASHBOARD
+            =================================================== -->
+
+            <section
+                id="dashboard"
+                class="dashboard-section"
+            >
+
+                <div class="campaign-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            Campanha analisada
+                        </span>
+
+                        <h2
+                            class="campaign-name"
+                            data-campaign-name
+                        >
+                            Carregando campanha...
+                        </h2>
+
+                        <p data-campaign-objective>
+                            Carregando objetivo...
+                        </p>
+
                     </div>
 
-                    <!-- Seção de Diagnóstico e Correções -->
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--text-primary); border-bottom: 2px solid var(--warning-color); padding-bottom: 0.5rem; display: inline-block;">2. Diagnóstico e Correções</h4>
-                        
-                        <div style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid var(--warning-color); padding: 1rem; margin-top: 1rem;">
-                            <h5 style="margin: 0 0 0.5rem 0; color: var(--warning-color);">⚠️ Alerta: CPA Alto no TikTok</h5>
-                            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">O Custo por Aquisição está 20% acima da meta estipulada.</p>
-                            <div style="margin-top: 1rem; background: var(--background-tertiary); padding: 1rem; border-radius: 4px;">
-                                <strong style="display: block; color: var(--text-primary); margin-bottom: 0.5rem;">Como corrigir:</strong>
-                                <ol style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: var(--text-secondary);">
-                                    <li style="margin-bottom: 0.3rem;">Pause os criativos com CTR abaixo de 1%.</li>
-                                    <li style="margin-bottom: 0.3rem;">Refine a segmentação para excluir usuários inativos nos últimos 30 dias.</li>
-                                    <li>Redirecione 10% do orçamento para o Instagram Stories (melhor performance atual).</li>
-                                </ol>
-                            </div>
+
+                    <div class="campaign-status">
+
+                        <i class="fas fa-circle-check"></i>
+
+                        Dados carregados via JSON
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================================
+                     KPIs PRINCIPAIS
+                =========================================== -->
+
+                <div class="kpi-grid">
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-wallet"></i>
                         </div>
 
-                        <div style="background: rgba(40, 167, 69, 0.1); border-left: 4px solid var(--success-color); padding: 1rem; margin-top: 1rem;">
-                            <h5 style="margin: 0 0 0.5rem 0; color: var(--success-color);">✅ Oportunidade: E-mail Marketing</h5>
-                            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Taxa de abertura acima da média (25%).</p>
-                            <div style="margin-top: 1rem; background: var(--background-tertiary); padding: 1rem; border-radius: 4px;">
-                                <strong style="display: block; color: var(--text-primary); margin-bottom: 0.5rem;">Ação Recomendada:</strong>
-                                <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">Enviar e-mail de "Última Chamada" para a base engajada para maximizar conversões imediatas.</p>
-                            </div>
+                        <span class="kpi-label">
+                            Investimento
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="totalSpend"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Investimento realizado
+                        </small>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-sack-dollar"></i>
                         </div>
-                    </div>
+
+                        <span class="kpi-label">
+                            Receita
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="totalRevenue"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Receita atribuída
+                        </small>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-arrow-trend-up"></i>
+                        </div>
+
+                        <span class="kpi-label">
+                            ROAS
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="roas"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Receita / investimento
+                        </small>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-percent"></i>
+                        </div>
+
+                        <span class="kpi-label">
+                            ROI
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="roi"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Retorno sobre investimento
+                        </small>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+
+                        <span class="kpi-label">
+                            Conversões
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="conversions"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Vendas atribuídas
+                        </small>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <div class="kpi-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+
+                        <span class="kpi-label">
+                            CPA Médio
+                        </span>
+
+                        <strong
+                            class="kpi-value"
+                            data-kpi="cpa"
+                        >
+                            —
+                        </strong>
+
+                        <small>
+                            Custo por aquisição
+                        </small>
+
+                    </article>
+
                 </div>
-            </div>
-            <div id="view-campaign" class="hidden" style="padding: 2rem;">
-                <h2>Análise de Campanha</h2>
-                <div class="card" style="margin-bottom: 2rem;">
-                    <h3>Resumo de Performance</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+
+
+                <!-- ==========================================
+                     KPIs DE MÍDIA
+                =========================================== -->
+
+                <div class="secondary-kpi-grid">
+
+                    <article>
+
+                        <span>
+                            Impressões
+                        </span>
+
+                        <strong data-kpi="impressions">
+                            —
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            Cliques
+                        </span>
+
+                        <strong data-kpi="clicks">
+                            —
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            CTR
+                        </span>
+
+                        <strong data-kpi="ctr">
+                            —
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            CPC
+                        </span>
+
+                        <strong data-kpi="cpc">
+                            —
+                        </strong>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            Taxa de Conversão
+                        </span>
+
+                        <strong data-kpi="conversionRate">
+                            —
+                        </strong>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ==========================================
+                     RESUMO EXECUTIVO
+                =========================================== -->
+
+                <article class="executive-summary-card">
+
+                    <div class="section-heading">
+
                         <div>
-                            <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">Impressões</span>
-                            <span style="font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">245.000</span>
+
+                            <span class="section-label">
+                                Visão executiva
+                            </span>
+
+                            <h3>
+                                Resumo da Campanha
+                            </h3>
+
                         </div>
-                        <div>
-                            <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">Cliques</span>
-                            <span style="font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">12.500</span>
+
+
+                        <div class="heading-icon">
+                            <i class="fas fa-chart-pie"></i>
                         </div>
-                        <div>
-                            <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">CTR</span>
-                            <span style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">5.1%</span>
-                        </div>
-                        <div>
-                            <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">Conversões</span>
-                            <span style="font-size: 1.5rem; font-weight: bold; color: var(--success-color);">850</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Análise e Insights</h3>
-                    <div style="margin-top: 1rem;">
-                        <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.5rem;">Dados da Campanha</h4>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;"><strong>Campanha:</strong> Lançamento Festival SynthWave Brasil 2024</p>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;"><strong>Objetivo:</strong> Gerar awareness e vender o primeiro lote de ingressos.</p>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;"><strong>Público-Alvo:</strong> Jovens e adultos (25-45 anos), entusiastas de música eletrônica e cultura retrô.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
-                        <h4 style="font-size: 1rem; color: var(--text-primary); margin-bottom: 0.5rem;">Insights da IA</h4>
-                        <ul style="padding-left: 1.2rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">
-                            <li>O canal <strong>Instagram</strong> apresenta o maior volume de conversões, sugerindo alta afinidade do público com os criativos visuais.</li>
-                            <li>O custo por clique (CPC) no <strong>TikTok</strong> está 15% abaixo da média, indicando uma oportunidade para escalar o investimento.</li>
-                            <li>A taxa de abertura de e-mail marketing está estável, mas a conversão pode ser otimizada com testes A/B nos assuntos.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="view-calc" class="hidden" style="padding: 2rem;">
-                <h2>Calculadora de Métricas</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                    <div class="card">
-                        <h3>Calculadora de ROI</h3>
-                        <div style="margin-top: 1rem;">
-                            <label>Receita Obtida (R$)</label>
-                            <input type="number" id="roi-revenue" placeholder="0,00">
-                        </div>
-                        <div style="margin-top: 1rem;">
-                            <label>Custo do Investimento (R$)</label>
-                            <input type="number" id="roi-cost" placeholder="0,00">
-                        </div>
-                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-                            <button id="btn-calc-roi" style="background: var(--accent-color); color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Calcular</button>
-                            <div style="text-align: right;">
-                                <span style="display: block; font-size: 0.8rem; color: var(--text-secondary);">ROI Calculado</span>
-                                <span id="roi-result" style="font-size: 1.2rem; font-weight: bold;">0%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Calculadora de CPA</h3>
-                        <div style="margin-top: 1rem;">
-                            <label>Custo Total (R$)</label>
-                            <input type="number" id="cpa-cost" placeholder="0,00">
-                        </div>
-                        <div style="margin-top: 1rem;">
-                            <label>Conversões</label>
-                            <input type="number" id="cpa-conversions" placeholder="0">
-                        </div>
-                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-                            <button id="btn-calc-cpa" style="background: var(--accent-color); color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Calcular</button>
-                            <div style="text-align: right;">
-                                <span style="display: block; font-size: 0.8rem; color: var(--text-secondary);">CPA</span>
-                                <span id="cpa-result" style="font-size: 1.2rem; font-weight: bold;">R$ 0,00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Calculadora de CPC</h3>
-                        <div style="margin-top: 1rem;">
-                            <label>Custo Total (R$)</label>
-                            <input type="number" id="cpc-cost" placeholder="0,00">
-                        </div>
-                        <div style="margin-top: 1rem;">
-                            <label>Cliques</label>
-                            <input type="number" id="cpc-clicks" placeholder="0">
-                        </div>
-                        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-                            <button id="btn-calc-cpc" style="background: var(--accent-color); color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Calcular</button>
-                            <div style="text-align: right;">
-                                <span style="display: block; font-size: 0.8rem; color: var(--text-secondary);">CPC</span>
-                                <span id="cpc-result" style="font-size: 1.2rem; font-weight: bold;">R$ 0,00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="view-sources" class="hidden" style="padding: 2rem;">
-                <h2>Fontes de Dados</h2>
-                <div class="card" style="max-width: 600px;">
-                    <h3>Nova Campanha</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">Insira os dados da campanha para iniciar a análise inteligente.</p>
-                    
-                    <div style="margin-bottom: 1rem;">
-                        <label>Nome da Campanha</label>
-                        <input type="text" id="source-campaign-name" placeholder="Ex: Lançamento Verão 2024">
+
                     </div>
 
-                    <div style="margin-bottom: 1rem;">
-                        <label>Objetivo Principal</label>
-                        <textarea id="source-campaign-objective" rows="3" placeholder="Ex: Aumentar o reconhecimento da marca e gerar 500 leads qualificados."></textarea>
+
+                    <div
+                        id="campaignSummary"
+                        class="campaign-summary"
+                    >
+
+                        <p>
+                            Processando os dados da campanha...
+                        </p>
+
                     </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-                        <div>
-                            <label>Orçamento (R$)</label>
-                            <input type="number" id="source-campaign-budget" placeholder="0,00">
-                        </div>
-                        <div>
-                            <label>Canais Previstos</label>
-                            <input type="text" id="source-campaign-channels" placeholder="Ex: Instagram, Google Ads">
-                        </div>
+                </article>
+
+            </section>
+
+
+            <!-- ==================================================
+                 PERFORMANCE POR CANAL
+            =================================================== -->
+
+            <section
+                id="performance"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Channel Analytics
+                        </span>
+
+                        <h2>
+                            Performance por Canal
+                        </h2>
+
+                        <p>
+                            Comparação dos principais indicadores
+                            de mídia e aquisição por canal.
+                        </p>
+
                     </div>
 
-                    <div style="text-align: right; margin-top: 1.5rem;">
-                        <button id="btn-analyze-campaign" style="background: var(--success-color); color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Iniciar Análise</button>
-                    </div>
                 </div>
-            </div>
+
+
+                <div class="table-card">
+
+                    <div class="table-scroll">
+
+                        <table class="performance-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Canal
+                                    </th>
+
+                                    <th>
+                                        Investimento
+                                    </th>
+
+                                    <th>
+                                        Impressões
+                                    </th>
+
+                                    <th>
+                                        Cliques
+                                    </th>
+
+                                    <th>
+                                        Conversões
+                                    </th>
+
+                                    <th>
+                                        CTR
+                                    </th>
+
+                                    <th>
+                                        CPC
+                                    </th>
+
+                                    <th>
+                                        Conv. Rate
+                                    </th>
+
+                                    <th>
+                                        CPA
+                                    </th>
+
+                                    <th>
+                                        ROAS
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody id="channelPerformance">
+
+                                <tr>
+
+                                    <td colspan="10">
+
+                                        Carregando performance dos canais...
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <div class="metric-guide">
+
+                    <div>
+
+                        <strong>
+                            CTR
+                        </strong>
+
+                        <span>
+                            Cliques ÷ Impressões
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            CPC
+                        </strong>
+
+                        <span>
+                            Investimento ÷ Cliques
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            CPA
+                        </strong>
+
+                        <span>
+                            Investimento ÷ Conversões
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            ROAS
+                        </strong>
+
+                        <span>
+                            Receita ÷ Investimento
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 METAS
+            =================================================== -->
+
+            <section
+                id="goals"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Planejado × Realizado
+                        </span>
+
+                        <h2>
+                            Acompanhamento de Metas
+                        </h2>
+
+                        <p>
+                            Comparação automática dos indicadores
+                            realizados com as metas definidas
+                            no planejamento da campanha.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="goalStatus"
+                    class="goal-grid"
+                >
+
+                    <div class="loading-card">
+                        Avaliando metas...
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 RECOMENDAÇÕES
+            =================================================== -->
+
+            <section
+                id="recommendations"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Decision Support
+                        </span>
+
+                        <h2>
+                            Recomendações Automatizadas
+                        </h2>
+
+                        <p>
+                            Recomendações geradas a partir dos
+                            KPIs da campanha e de regras analíticas
+                            transparentes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="rule-badge">
+
+                        <i class="fas fa-code-branch"></i>
+
+                        Rule-based Engine
+
+                    </div>
+
+                </div>
+
+
+                <div class="analytics-notice">
+
+                    <i class="fas fa-circle-info"></i>
+
+                    <div>
+
+                        <strong>
+                            Como as recomendações são geradas?
+                        </strong>
+
+                        <p>
+                            O MIA compara indicadores como ROAS,
+                            CPA e CTR com metas e limites definidos
+                            no dataset. Esta versão utiliza lógica
+                            determinística e não modelos de
+                            Inteligência Artificial.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="recommendationsContainer"
+                    class="recommendations-grid"
+                >
+
+                    <article class="recommendation-card">
+
+                        <h4>
+                            Processando recomendações...
+                        </h4>
+
+                        <p>
+                            O motor analítico está avaliando os
+                            canais da campanha.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                 METODOLOGIA
+            =================================================== -->
+
+            <section
+                id="methodology"
+                class="dashboard-section"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            Product & Analytics
+                        </span>
+
+                        <h2>
+                            Como o MIA Funciona
+                        </h2>
+
+                        <p>
+                            O projeto transforma dados brutos de
+                            campanhas em informação estruturada
+                            para apoiar decisões de Marketing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-flow">
+
+                    <article>
+
+                        <div class="process-number">
+                            01
+                        </div>
+
+                        <i class="fas fa-database"></i>
+
+                        <h3>
+                            Dados
+                        </h3>
+
+                        <p>
+                            Planejamento e resultados realizados
+                            são carregados a partir do
+                            <code>campaign_data.json</code>.
+                        </p>
+
+                    </article>
+
+
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+
+                    <article>
+
+                        <div class="process-number">
+                            02
+                        </div>
+
+                        <i class="fas fa-calculator"></i>
+
+                        <h3>
+                            KPIs
+                        </h3>
+
+                        <p>
+                            O JavaScript calcula CTR, CPC,
+                            taxa de conversão, CPA, ROAS e ROI.
+                        </p>
+
+                    </article>
+
+
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+
+                    <article>
+
+                        <div class="process-number">
+                            03
+                        </div>
+
+                        <i class="fas fa-magnifying-glass-chart"></i>
+
+                        <h3>
+                            Diagnóstico
+                        </h3>
+
+                        <p>
+                            Os indicadores realizados são
+                            comparados às metas e regras da
+                            campanha.
+                        </p>
+
+                    </article>
+
+
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+
+                    <article>
+
+                        <div class="process-number">
+                            04
+                        </div>
+
+                        <i class="fas fa-lightbulb"></i>
+
+                        <h3>
+                            Recomendação
+                        </h3>
+
+                        <p>
+                            O motor de regras identifica
+                            oportunidades, alertas e possibilidades
+                            de otimização.
+                        </p>
+
+                    </article>
+
+
+                    <div class="process-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+
+                    <article>
+
+                        <div class="process-number">
+                            05
+                        </div>
+
+                        <i class="fas fa-chess"></i>
+
+                        <h3>
+                            Decisão
+                        </h3>
+
+                        <p>
+                            Os insights são apresentados de forma
+                            executiva para apoiar decisões de
+                            investimento e performance.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="architecture-card">
+
+                    <h3>
+                        Pipeline Analítico
+                    </h3>
+
+
+                    <div class="architecture-flow">
+
+                        <span>
+                            campaign_data.json
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                        <span>
+                            Agregação
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                        <span>
+                            KPIs
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                        <span>
+                            Regras
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                        <span>
+                            Recomendações
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="future-card">
+
+                    <div>
+
+                        <span class="section-label">
+                            Próxima evolução
+                        </span>
+
+                        <h3>
+                            Inteligência Artificial
+                        </h3>
+
+                        <p>
+                            Uma camada futura poderá utilizar modelos
+                            de IA para interpretação contextual,
+                            análise de tendências, previsão de
+                            performance e recomendações generativas.
+                            Essa funcionalidade ainda não faz parte
+                            do MVP atual.
+                        </p>
+
+                    </div>
+
+
+                    <i class="fas fa-brain"></i>
+
+                </div>
+
+            </section>
+
+
         </main>
+
+
+        <!-- ==================================================
+             FOOTER
+        =================================================== -->
+
+        <footer class="app-footer">
+
+            <div>
+
+                <strong>
+                    MIA — Marketing Intelligence Analyst
+                </strong>
+
+                <span>
+                    Marketing Analytics para decisões orientadas por dados.
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    MVP de portfólio
+                </span>
+
+                <span>
+                    •
+                </span>
+
+                <span>
+                    Marcus Guedes
+                </span>
+
+            </div>
+
+        </footer>
+
     </div>
 
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
