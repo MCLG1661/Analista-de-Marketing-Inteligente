@@ -278,6 +278,7 @@ Marcus Guedes
 Marketing | Data Science | Inteligência Artificial | Gestão de Projetos
 
 GitHub: https://github.com/MCLG1661
+
 LinkedIn: https://www.linkedin.com/in/marcusguedes
 
 ---
