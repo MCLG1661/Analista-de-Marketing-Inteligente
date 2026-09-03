@@ -1443,6 +1443,48 @@ function renderCampaignSummary(
             )[0];
 
 
+    let efficiencySummary = '';
+
+
+    if (
+        bestChannel.name ===
+        lowestCPAChannel.name
+    ) {
+
+        efficiencySummary = `
+            <p>
+                <strong>
+                    ${escapeHTML(bestChannel.name)}
+                </strong>
+                se destacou como o canal mais eficiente da campanha,
+                apresentando simultaneamente o maior ROAS
+                (<strong>${formatROAS(bestChannel.metrics.roas)}</strong>)
+                e o menor CPA
+                (<strong>${formatCurrency(lowestCPAChannel.metrics.cpa)}</strong>).
+            </p>
+        `;
+
+    } else {
+
+        efficiencySummary = `
+            <p>
+                <strong>
+                    ${escapeHTML(bestChannel.name)}
+                </strong>
+                apresentou o maior ROAS da campanha
+                (<strong>${formatROAS(bestChannel.metrics.roas)}</strong>),
+                enquanto
+                <strong>
+                    ${escapeHTML(lowestCPAChannel.name)}
+                </strong>
+                registrou o menor CPA
+                (<strong>${formatCurrency(lowestCPAChannel.metrics.cpa)}</strong>).
+            </p>
+        `;
+
+    }
+
+
     container.innerHTML = `
 
         <p>
@@ -1479,19 +1521,7 @@ function renderCampaignSummary(
             </strong>.
         </p>
 
-        <p>
-            O canal com maior ROAS foi
-            <strong>
-                ${escapeHTML(bestChannel.name)}
-            </strong>
-            (${formatROAS(bestChannel.metrics.roas)}),
-            enquanto
-            <strong>
-                ${escapeHTML(lowestCPAChannel.name)}
-            </strong>
-            apresentou o menor CPA
-            (${formatCurrency(lowestCPAChannel.metrics.cpa)}).
-        </p>
+        ${efficiencySummary}
 
     `;
 
