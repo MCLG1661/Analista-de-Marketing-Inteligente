@@ -1,69 +1,151 @@
 [
   {
+    "campaign_id": "CMP-SYNTHWAVE-2024-001",
     "campaign_name": "Lançamento Festival SynthWave Brasil 2024",
-    "objective": "Gerar awareness e vender o primeiro lote de ingressos para o festival.",
+    "status": "Concluída",
+    "objective": "Gerar awareness, tráfego qualificado e vendas do primeiro lote de ingressos para o festival.",
     "start_date": "2024-08-01",
     "end_date": "2024-09-15",
-    "budget": 500000,
     "currency": "BRL",
-    "target_audience": {
-      "description": "Jovens e adultos (25-45 anos), entusiastas de música eletrônica, cultura pop dos anos 80/90, tecnologia e games. Frequentadores de festivais como Lollapalooza e Tomorrowland.",
-      "interests": ["Música Eletrônica", "Nu Disco", "House", "Daft Punk", "Vintage Culture", "Games Retrô", "Tecnologia"],
-      "location": ["São Paulo", "Rio de Janeiro", "Belo Horizonte", "Curitiba"]
+
+    "planning": {
+      "total_budget": 500000,
+      "revenue_target": 1500000,
+      "conversion_target": 6000,
+      "target_ctr": 2.5,
+      "target_conversion_rate": 4.0,
+      "target_cpa": 85,
+      "target_roas": 3.0
     },
+
+    "target_audience": {
+      "description": "Jovens e adultos de 25 a 45 anos interessados em música eletrônica, cultura retrô, tecnologia, entretenimento e festivais.",
+      "age_range": "25-45",
+      "locations": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Belo Horizonte",
+        "Curitiba"
+      ],
+      "interests": [
+        "Música Eletrônica",
+        "Nu Disco",
+        "House",
+        "Festivais",
+        "Cultura Retrô",
+        "Games",
+        "Tecnologia"
+      ]
+    },
+
     "channels": [
       {
+        "id": "CH-001",
         "name": "Instagram",
-        "budget_allocation": 250000,
-        "kpis": ["Impressions", "Reach", "Engagement Rate", "Ticket Clicks"]
+        "planned_budget": 250000,
+        "actual_spend": 238000,
+        "impressions": 6200000,
+        "clicks": 198400,
+        "conversions": 3100,
+        "revenue": 775000,
+        "engagements": 434000
       },
       {
+        "id": "CH-002",
         "name": "TikTok",
-        "budget_allocation": 150000,
-        "kpis": ["Video Views", "Shares", "Conversion Rate"]
+        "planned_budget": 150000,
+        "actual_spend": 158000,
+        "impressions": 5100000,
+        "clicks": 127500,
+        "conversions": 1450,
+        "revenue": 319000,
+        "engagements": 510000
       },
       {
+        "id": "CH-003",
         "name": "Email Marketing",
-        "budget_allocation": 50000,
-        "kpis": ["Open Rate", "Click-Through Rate", "Conversions"]
+        "planned_budget": 50000,
+        "actual_spend": 42000,
+        "impressions": 520000,
+        "clicks": 41600,
+        "conversions": 980,
+        "revenue": 274400,
+        "engagements": 130000
       },
       {
-        "name": "Influencers",
-        "budget_allocation": 50000,
-        "kpis": ["Mentions", "Audience Growth", "Promo Code Usage"]
+        "id": "CH-004",
+        "name": "Influenciadores",
+        "planned_budget": 50000,
+        "actual_spend": 52000,
+        "impressions": 1450000,
+        "clicks": 36250,
+        "conversions": 570,
+        "revenue": 142500,
+        "engagements": 188500
       }
     ],
+
     "creatives": [
       {
-        "id": "CRTV001",
+        "id": "CRTV-001",
         "channel": "Instagram",
-        "type": "Video Teaser",
-        "title": "A Onda Retrôfuturista Chegou",
-        "description": "Vídeo curto com batidas de Nu Disco e imagens de artistas como Daft Punk e Purple Disco Machine, anunciando a data do festival.",
-        "related_artists": ["Daft Punk", "Purple Disco Machine", "Nu Disco"]
+        "type": "Vídeo Teaser",
+        "title": "A Onda Retrofuturista Chegou",
+        "impressions": 2400000,
+        "clicks": 86400,
+        "conversions": 1420
       },
       {
-        "id": "CRTV002",
+        "id": "CRTV-002",
+        "channel": "Instagram",
+        "type": "Stories",
+        "title": "Primeiro Lote — Últimos Ingressos",
+        "impressions": 1800000,
+        "clicks": 75600,
+        "conversions": 1260
+      },
+      {
+        "id": "CRTV-003",
         "channel": "TikTok",
-        "type": "Challenge",
+        "type": "Vídeo Curto",
         "title": "#PassinhoSynthWave",
-        "description": "Desafio de dança usando um remix exclusivo de uma música do Vintage Culture.",
-        "related_artists": ["Vintage Culture"]
+        "impressions": 3200000,
+        "clicks": 89600,
+        "conversions": 890
       },
       {
-        "id": "CRTV003",
+        "id": "CRTV-004",
         "channel": "Email Marketing",
         "type": "Newsletter",
-        "title": "Line-up Exclusivo e Pré-venda SynthWave Brasil!",
-        "description": "Email para a base de leads com o anúncio de parte do line-up (Alok, Mochakk) e link para pré-venda com desconto.",
-        "related_artists": ["Alok", "Mochakk"]
+        "title": "Line-up Exclusivo e Pré-venda SynthWave Brasil",
+        "impressions": 300000,
+        "clicks": 28500,
+        "conversions": 720
+      },
+      {
+        "id": "CRTV-005",
+        "channel": "Influenciadores",
+        "type": "Conteúdo Patrocinado",
+        "title": "Experiência SynthWave",
+        "impressions": 920000,
+        "clicks": 24840,
+        "conversions": 390
       }
     ],
-    "financial_metrics": {
-      "ebitda": 125000,
-      "margin": "25%",
-      "roi": "4.5",
-      "flow": 60000
+
+    "business_context": {
+      "average_ticket_value": 250,
+      "primary_conversion": "Venda de ingresso",
+      "campaign_phase": "Primeiro lote",
+      "business_goal": "Maximizar vendas mantendo eficiência de aquisição e identificar canais com potencial para realocação de orçamento."
+    },
+
+    "analysis_rules": {
+      "high_performance_roas_multiplier": 1.15,
+      "low_performance_roas_multiplier": 0.85,
+      "high_cpa_multiplier": 1.15,
+      "low_ctr_multiplier": 0.8,
+      "budget_reallocation_percentage": 10
     }
   }
 ]
