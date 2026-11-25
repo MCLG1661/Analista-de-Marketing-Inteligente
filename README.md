@@ -543,6 +543,12 @@ O MVP estabelece uma base para evoluções futuras.
 
 ---
 
+## Projeto complementar
+
+O [Marketing Intelligence AI](https://github.com/MCLG1661/Marketing-Intelligence-AI) é um agente separado de estratégia e análise de marketing. O MIA deste repositório permanece um dashboard analítico baseado em regras; não pressupõe integração entre os dois projetos.
+
+---
+
 ## 🤖 Próxima Camada: Inteligência Artificial
 
 Uma evolução futura poderá incorporar modelos de IA para:
