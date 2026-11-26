@@ -557,8 +557,7 @@ function generateRecommendations(
 
 
         if (
-            best.metrics.roas !== null &&
-            metrics.roas >
+            best.metrics.roas >
             worst.metrics.roas
         ) {
 
