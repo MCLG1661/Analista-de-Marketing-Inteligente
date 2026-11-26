@@ -90,7 +90,7 @@ async function loadCampaignData() {
 function calculateCTR(clicks, impressions) {
 
     if (!impressions) {
-        return 0;
+        return null;
     }
 
     return (clicks / impressions) * 100;
@@ -101,7 +101,7 @@ function calculateCTR(clicks, impressions) {
 function calculateCPC(spend, clicks) {
 
     if (!clicks) {
-        return 0;
+        return null;
     }
 
     return spend / clicks;
@@ -112,7 +112,7 @@ function calculateCPC(spend, clicks) {
 function calculateConversionRate(conversions, clicks) {
 
     if (!clicks) {
-        return 0;
+        return null;
     }
 
     return (conversions / clicks) * 100;
@@ -123,7 +123,7 @@ function calculateConversionRate(conversions, clicks) {
 function calculateCPA(spend, conversions) {
 
     if (!conversions) {
-        return 0;
+        return null;
     }
 
     return spend / conversions;
@@ -134,7 +134,7 @@ function calculateCPA(spend, conversions) {
 function calculateROAS(revenue, spend) {
 
     if (!spend) {
-        return 0;
+        return null;
     }
 
     return revenue / spend;
@@ -145,7 +145,7 @@ function calculateROAS(revenue, spend) {
 function calculateROI(revenue, spend) {
 
     if (!spend) {
-        return 0;
+        return null;
     }
 
     return ((revenue - spend) / spend) * 100;
@@ -303,7 +303,8 @@ function diagnoseChannel(
 
 
     if (
-        metrics.roas >=
+        metrics.roas !== null &&
+            metrics.roas >=
         highRoasThreshold
     ) {
 
@@ -315,7 +316,8 @@ function diagnoseChannel(
         });
 
     } else if (
-        metrics.roas <
+        metrics.roas !== null &&
+            metrics.roas <
         lowRoasThreshold
     ) {
 
@@ -330,7 +332,8 @@ function diagnoseChannel(
 
 
     if (
-        metrics.cpa >
+        metrics.cpa !== null &&
+            metrics.cpa >
         highCpaThreshold
     ) {
 
@@ -345,7 +348,8 @@ function diagnoseChannel(
 
 
     if (
-        metrics.ctr <
+        metrics.ctr !== null &&
+            metrics.ctr <
         lowCtrThreshold
     ) {
 
@@ -360,7 +364,8 @@ function diagnoseChannel(
 
 
     if (
-        metrics.conversionRate >=
+        metrics.conversionRate !== null &&
+            metrics.conversionRate >=
         planning.target_conversion_rate
     ) {
 
@@ -424,8 +429,10 @@ function generateRecommendations(
 
 
         if (
+            metrics.roas !== null &&
             metrics.roas >=
             highRoasThreshold &&
+            metrics.cpa !== null &&
             metrics.cpa <=
             planning.target_cpa
         ) {
@@ -451,6 +458,7 @@ function generateRecommendations(
 
 
         if (
+            metrics.roas !== null &&
             metrics.roas <
             lowRoasThreshold
         ) {
@@ -476,6 +484,7 @@ function generateRecommendations(
 
 
         if (
+            metrics.cpa !== null &&
             metrics.cpa >
             highCpaThreshold
         ) {
@@ -501,6 +510,7 @@ function generateRecommendations(
 
 
         if (
+            metrics.ctr !== null &&
             metrics.ctr <
             lowCtrThreshold
         ) {
@@ -528,7 +538,7 @@ function generateRecommendations(
 
 
     const sortedByRoas =
-        [...channels].sort(
+        channels.filter(channel => channel.metrics.roas !== null).sort(
             (a, b) =>
                 b.metrics.roas -
                 a.metrics.roas
@@ -547,7 +557,8 @@ function generateRecommendations(
 
 
         if (
-            best.metrics.roas >
+            best.metrics.roas !== null &&
+            metrics.roas >
             worst.metrics.roas
         ) {
 
@@ -730,8 +741,8 @@ function evaluateCampaignGoals(
             actual:
                 metrics.ctr,
 
-            achieved:
-                metrics.ctr >=
+            achieved: metrics.ctr === null ? null :
+            metrics.ctr >=
                 planning.target_ctr
         },
 
@@ -743,8 +754,8 @@ function evaluateCampaignGoals(
             actual:
                 metrics.conversionRate,
 
-            achieved:
-                metrics.conversionRate >=
+            achieved: metrics.conversionRate === null ? null :
+            metrics.conversionRate >=
                 planning.target_conversion_rate
         },
 
@@ -756,8 +767,8 @@ function evaluateCampaignGoals(
             actual:
                 metrics.cpa,
 
-            achieved:
-                metrics.cpa <=
+            achieved: metrics.cpa === null ? null :
+            metrics.cpa <=
                 planning.target_cpa
         },
 
@@ -769,8 +780,8 @@ function evaluateCampaignGoals(
             actual:
                 metrics.roas,
 
-            achieved:
-                metrics.roas >=
+            achieved: metrics.roas === null ? null :
+            metrics.roas >=
                 planning.target_roas
         }
 
@@ -784,6 +795,7 @@ function evaluateCampaignGoals(
 // ==========================================================
 
 function formatCurrency(value) {
+    if (value === null) return 'N/A';
 
     return new Intl.NumberFormat(
         'pt-BR',
@@ -836,6 +848,7 @@ function formatCompactNumber(value) {
 
 
 function formatPercent(value) {
+    if (value === null) return 'N/A';
 
     return `${Number(value || 0).toFixed(2)}%`;
 
@@ -843,6 +856,7 @@ function formatPercent(value) {
 
 
 function formatROAS(value) {
+    if (value === null) return 'N/A';
 
     return `${Number(value || 0).toFixed(2)}x`;
 
@@ -1166,8 +1180,7 @@ function renderRecommendations(
                 </h4>
 
                 <p>
-                    Os principais indicadores estão dentro
-                    das faixas definidas para a campanha.
+                    Nenhuma recomendação foi gerada pelas regras aplicáveis aos indicadores calculáveis.
                 </p>
             </div>
         `;
@@ -1351,7 +1364,7 @@ function renderGoalStatus(
 
         item.className =
             `goal-item ${
-                goal.achieved
+                goal.achieved === null ? '' : goal.achieved
                     ? 'goal-achieved'
                     : 'goal-not-achieved'
             }`;
@@ -1381,7 +1394,7 @@ function renderGoalStatus(
 
             <div>
                 ${
-                    goal.achieved
+                    goal.achieved === null ? 'Não calculável' : goal.achieved
                         ? '✓ Meta atingida'
                         : '⚠ Abaixo da meta'
                 }
@@ -1426,7 +1439,7 @@ function renderCampaignSummary(
 
 
     const bestChannel =
-        [...analysis.channels]
+        analysis.channels.filter(channel => channel.metrics.roas !== null)
             .sort(
                 (a, b) =>
                     b.metrics.roas -
@@ -1435,7 +1448,7 @@ function renderCampaignSummary(
 
 
     const lowestCPAChannel =
-        [...analysis.channels]
+        analysis.channels.filter(channel => channel.metrics.cpa !== null)
             .sort(
                 (a, b) =>
                     a.metrics.cpa -
@@ -1446,7 +1459,9 @@ function renderCampaignSummary(
     let efficiencySummary = '';
 
 
-    if (
+    if (!bestChannel || !lowestCPAChannel) {
+        efficiencySummary = '<p>Não há indicadores calculáveis suficientes para comparar ROAS e CPA.</p>';
+    } else if (
         bestChannel.name ===
         lowestCPAChannel.name
     ) {
