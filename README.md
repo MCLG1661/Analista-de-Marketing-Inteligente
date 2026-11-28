@@ -17,6 +17,10 @@ O projeto simula um fluxo de Marketing Intelligence no qual dados de diferentes 
 🌐 **Aplicação online:**  
 https://analista-de-marketing-inteligente-t.vercel.app/
 
+## English overview
+
+Marketing Intelligence Analyst (MIA) is a JavaScript MVP that turns campaign data from JSON into KPIs, diagnoses, and recommendations in an executive dashboard. It demonstrates how campaign planning, monitoring, and post-campaign analysis can support marketing decisions.
+
 ---
 
 ## 🎯 Problema de Negócio
